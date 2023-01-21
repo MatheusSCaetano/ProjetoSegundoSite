@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    
+    
+}
+header{
+    width: 100%;
+    background-color: white; 
+    display:flex;
+    height: 100;
+    border: 10px groove;
+    border-color: rgb(218,133,8);
+}
+header ul li{
+    display: inline;
+    padding-top: 15px;
+    padding-left: 25px;
+    font-size: 15px;
+    
+}
+header ul li a{
+    color: black;
+    text-decoration: none;
+    text-shadow: 1px 0px ;
+    
+}
+header ul li a:hover{
+    background-color:rgb(218,133,8) ;
+}
+.msgheader{
+    padding-top: 25px;
+   
+}
+.logo{
+    width: 10%;
+    height: 20px;
+    padding: 10px;
+  
+}
+.menu{
+    width: 50%;
+    height: 200px;
+    padding-top: 25px;
+    padding-left: 30px;
+   
+    
+}
+.redes_sociais{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 450px;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+.insta{
+    width: 10%;
+    height: 200px;
+    display: inline-block;
+    position: top;
+    margin-left: 20px;
+}
+.wpp{
+    width: 10%;
+    height: 200px;
+    margin-left: 40px;
+  
+}
+.banner{
+    margin-top: 3px;
+    height: 80%;
+    background-color: black;
+    text-align: center;
+    border: 15px outset;
+    border-color: rgb(218,133,8)  rgb(155, 94, 2)  rgb(155, 94, 2)  rgb(218,133,8) ;
+}
+.link_video{
+    width: 50%;
+    margin-left: 300px;
+}
+.link_video a{
+    text-decoration: none;
+    font-size: 15px;
+
+}
+.banner > h1{
+    color: rgb(218,133,8);
+    font-size: 100px;
+    text-shadow: 5px 4px 0px;
+}
+.servicos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    height: 150%;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    border: outset 15px rgb(218,133,8) ;
+    }
+.titulo_catalogo{
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 470px;
+    
+    
+    
+}
+.titulo_catalogo > h1{
+    color:white;
+    text-shadow: 1px 1px 1px;
+    
+    
+
+}
+.titulo_catalogo > p{
+    color: white;
+   
+}
+.barba{
+    border-style: ridge;
+    width: 95%;
+    padding: 10px;
+    margin-top: 20px;
+    cursor:pointer;
+    margin-left: 30px;
+    
+}
+.barba:hover{
+    transform: scale(1.05s);
+}
+.corte{
+    border:ridge;
+    width: 30%;
+    padding: 10px;
+    margin-left: 20px;
+    cursor:pointer;
+   
+}
+.maquina{
+    border-style: ridge;
+    width: 30%;
+    padding: 10px;
+    margin-left: 50px;
+    cursor:pointer;
+    
+}
+.sobrancelha{
+    border-style: ridge;
+    width: 30%;
+    padding: 10px;
+    margin-left: 40px;
+    cursor:pointer;
+    
+    
+}
+.pigmentacao{
+    border-style: ridge;
+    width: 47%;
+    padding: 10px;
+    cursor:pointer;
+    margin-left: 20px;
+    
+    
+    
+}
+.acabamentos{
+    border-style: ridge;
+    width: 47%;
+   padding: 10px;
+   cursor:pointer;
+   margin-left: 40px;
+}
+h2{
+    color: rgb(218,133,8);
+    margin-bottom: 10px;
+}
