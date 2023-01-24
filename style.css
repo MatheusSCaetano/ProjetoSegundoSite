@@ -112,25 +112,44 @@ header ul li a:hover{
 .titulo_catalogo > h1{
     color:white;
     text-shadow: 1px 1px 1px;
-    
-    
-
+    animation-name: titulo_catalogo1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes titulo_catalogo1{
+    from{background-color:rgb(218,133,8);font-size: 18px;}
+    to{background-color: white;color: black;font-size: 24px;}
 }
 .titulo_catalogo > p{
     color: white;
-   
+    padding: 5px;
+    text-shadow: 1px 1px;
+    animation-name: titulo_catalogo2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes titulo_catalogo2{
+    from{background-color:rgb(218,133,8);font-size: 12px;}
+    to{background-color: white;color: black;font-size: 18px;} 
+    
 }
 .barba{
-    border-style: ridge;
+    border: white ridge 7px;
     width: 95%;
     padding: 10px;
     margin-top: 20px;
     cursor:pointer;
     margin-left: 30px;
     
+    
 }
 .barba:hover{
-    transform: scale(1.05s);
+    background-color: white; 
+    border: rgb(218,133,8) ridge 7px;
+    transition: 1s;
+    
 }
 .corte{
     border:ridge;
@@ -138,7 +157,11 @@ header ul li a:hover{
     padding: 10px;
     margin-left: 20px;
     cursor:pointer;
-   
+}
+.corte:hover{
+    background-color: white; 
+    border: rgb(218,133,8) ridge 7px;
+    transition: 1s;
 }
 .maquina{
     border-style: ridge;
@@ -146,7 +169,11 @@ header ul li a:hover{
     padding: 10px;
     margin-left: 50px;
     cursor:pointer;
-    
+}
+.maquina:hover{
+    background-color: white; 
+    border: rgb(218,133,8) ridge 7px;
+    transition: 1s;
 }
 .sobrancelha{
     border-style: ridge;
@@ -154,8 +181,11 @@ header ul li a:hover{
     padding: 10px;
     margin-left: 40px;
     cursor:pointer;
-    
-    
+}
+.sobrancelha:hover{
+    background-color: white; 
+    border: rgb(218,133,8) ridge 7px;
+    transition: 1s;
 }
 .pigmentacao{
     border-style: ridge;
@@ -163,9 +193,11 @@ header ul li a:hover{
     padding: 10px;
     cursor:pointer;
     margin-left: 20px;
-    
-    
-    
+}
+.pigmentacao:hover{
+    background-color: white; 
+    border: rgb(218,133,8) ridge 7px;
+    transition: 1s;
 }
 .acabamentos{
     border-style: ridge;
@@ -173,6 +205,11 @@ header ul li a:hover{
    padding: 10px;
    cursor:pointer;
    margin-left: 40px;
+}
+.acabamentos:hover{
+    background-color: white; 
+    border: rgb(218,133,8) ridge 7px;
+    transition: 1s;
 }
 h2{
     color: rgb(218,133,8);
