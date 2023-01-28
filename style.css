@@ -96,120 +96,140 @@ header ul li a:hover{
     align-items: center;
     text-align: center;
     background-color: black;
-    height: 150%;
+    height: 170%;
     margin-bottom: 25px;
     margin-top: 20px;
     border: outset 15px rgb(218,133,8) ;
     }
 .titulo_catalogo{
-    margin-top: 5px;
     text-align: center;
     margin-left: 470px;
-    
-    
-    
+    margin-top: 10px;
 }
 .titulo_catalogo > h1{
     color:white;
+    margin-top: 8px;
+    padding: 5px;
     text-shadow: 1px 1px 1px;
     animation-name: titulo_catalogo1;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    transform: scale(1.5);
 }
 @keyframes titulo_catalogo1{
     from{background-color:rgb(218,133,8);font-size: 18px;}
-    to{background-color: white;color: black;font-size: 24px;}
+    to{background-color: white;color: black;font-size: 22px;}
 }
 .titulo_catalogo > p{
+    margin-top: 5px;
     color: white;
     padding: 5px;
     text-shadow: 1px 1px;
     animation-name: titulo_catalogo2;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+   transform: scale(1.5);
 }
 @keyframes titulo_catalogo2{
-    from{background-color:rgb(218,133,8);font-size: 12px;}
-    to{background-color: white;color: black;font-size: 18px;} 
+    from{background-color:rgb(218,133,8);font-size: 10px;}
+    to{background-color: white;color: black;font-size: 13px;} 
+
     
 }
 .barba{
     border: white ridge 7px;
-    width: 95%;
+    width: 97%;
     padding: 10px;
     margin-top: 20px;
     cursor:pointer;
-    margin-left: 30px;
+    margin-left: 20px;
+    transition:transform 1s;
     
     
 }
 .barba:hover{
-    background-color: white; 
+    background-color: white;
+    transition: 1.5s; 
     border: rgb(218,133,8) ridge 7px;
-    transition: 1s;
+    transform: scale(1.03);
+    
     
 }
 .corte{
     border:ridge;
+    margin-top: 15px;
     width: 30%;
     padding: 10px;
     margin-left: 20px;
     cursor:pointer;
+    transition:transform 1s;
 }
 .corte:hover{
-    background-color: white; 
+    background-color: white;
+    transition: 1s; 
     border: rgb(218,133,8) ridge 7px;
-    transition: 1s;
+    transform: scale(1.05);
+    
 }
 .maquina{
     border-style: ridge;
+    margin-top: 15px;
     width: 30%;
     padding: 10px;
     margin-left: 50px;
     cursor:pointer;
+    transition:transform 1s;
 }
 .maquina:hover{
     background-color: white; 
-    border: rgb(218,133,8) ridge 7px;
     transition: 1s;
+    border: rgb(218,133,8) ridge 7px;
+    transform: scale(1.05);
 }
 .sobrancelha{
     border-style: ridge;
+    margin-top: 15px;
     width: 30%;
     padding: 10px;
     margin-left: 40px;
     cursor:pointer;
+    transition:transform 1s;
 }
 .sobrancelha:hover{
     background-color: white; 
-    border: rgb(218,133,8) ridge 7px;
     transition: 1s;
+    border: rgb(218,133,8) ridge 7px;
+    transform: scale(1.05);
 }
 .pigmentacao{
     border-style: ridge;
+    margin-top: 10px;
     width: 47%;
     padding: 10px;
     cursor:pointer;
     margin-left: 20px;
+    transition:transform 1s;
 }
 .pigmentacao:hover{
     background-color: white; 
-    border: rgb(218,133,8) ridge 7px;
     transition: 1s;
+    border: rgb(218,133,8) ridge 7px;
+    transform: scale(1.05);
 }
 .acabamentos{
     border-style: ridge;
+    margin-top: 10px;
     width: 47%;
    padding: 10px;
    cursor:pointer;
    margin-left: 40px;
+   transition:transform 1s;
 }
 .acabamentos:hover{
     background-color: white; 
-    border: rgb(218,133,8) ridge 7px;
     transition: 1s;
+    border: rgb(218,133,8) ridge 7px;
+    transform: scale(1.05);
 }
 h2{
     color: rgb(218,133,8);
