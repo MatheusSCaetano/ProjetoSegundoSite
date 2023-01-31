@@ -1,3 +1,6 @@
+:root{
+    --corpadrao:rgb(218,133,8);
+}
 *{
     margin: 0;
     padding: 0;
@@ -7,89 +10,79 @@
     
 }
 header{
-    width: 100%;
+    max-width: 100%;
     background-color: white; 
     display:flex;
-    height: 100;
+    flex-wrap: wrap;
     border: 10px groove;
-    border-color: rgb(218,133,8);
+    border-color: var(--corpadrao);
 }
-header ul li{
-    display: inline;
-    padding-top: 15px;
-    padding-left: 25px;
-    font-size: 15px;
-    
-    
+.menu{
+    width: 50%;
+    padding: 25px 15;
+    text-align: right;
 }
-header ul li a{
+
+header ul  a{
     color: black;
     text-decoration: none;
-    text-shadow: 1px 0px ;  
+    text-shadow: 1px 0px ; 
+    font-size: 16px; 
+    border: solid 2px black;
+    padding: 2px;
 }
-header ul li a:hover{
-    background-color:rgb(218,133,8);
+header ul  a:hover{
+    background-color:var(--corpadrao);
 }
 .msgheader{
-    padding-top: 25px;
+    width: 40%;
+   text-align: center;
     margin: 0 auto;
+    padding: 25 10;
+    font-size: 20px;
+    text-shadow: 1px 0px;
+    color: rgb(38, 37, 37);
    
 }
 .logo{
     width: 10%;
-    height: 20px;
     padding: 10px;
   
 }
-.menu{
-    width: 50%;
-    height: 200px;
-    padding-top: 25px;
-    padding-left: 30px;
-   
-    
-}
-.redes_sociais{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 450px;
-    padding-top: 15px;
-    padding-right: 10px;
-}
-.insta{
-    width: 10%;
-    height: 200px;
-    display: inline-block;
-    position: top;
-    margin-left: 20px;
-}
-.wpp{
-    width: 10%;
-    height: 200px;
-    margin-left: 40px;
-  
-}
+
+
 .banner{
+    max-width: 100%;
     margin-top: 3px;
-    height: 80%;
     background-color: black;
     text-align: center;
     border: 15px outset;
     border-color: rgb(218,133,8)  rgb(155, 94, 2)  rgb(155, 94, 2)  rgb(218,133,8) ;
 }
 .link_video{
-    width: 50%;
-    margin-left: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    
+    
 }
 .link_video a{
     text-decoration: none;
     font-size: 15px;
-
+}
+.link_video a img{
+    width: 30%;
+    padding: 0 5px;
+}
+.link_video p{
+    padding: 0 3px;
 }
 .banner > h1{
-    color: rgb(218,133,8);
+    color: var(--corpadrao);
     font-size: 100px;
     text-shadow: 5px 4px 0px;
+    width: 90%;
+    padding:0 10px;
 }
 .servicos{
     display: flex;
@@ -100,7 +93,7 @@ header ul li a:hover{
     height: 170%;
     margin-bottom: 25px;
     margin-top: 20px;
-    border: outset 15px rgb(218,133,8) ;
+    border: outset 15px var(--corpadrao) ;
     }
 .titulo_catalogo{
     text-align: center;
@@ -118,7 +111,7 @@ header ul li a:hover{
     transform: scale(1.5);
 }
 @keyframes titulo_catalogo1{
-    from{background-color:rgb(218,133,8);font-size: 18px;}
+    from{background-color:var(--corpadrao);font-size: 18px;}
     to{background-color: white;color: black;font-size: 22px;}
 }
 .titulo_catalogo > p{
@@ -132,7 +125,7 @@ header ul li a:hover{
    transform: scale(1.5);
 }
 @keyframes titulo_catalogo2{
-    from{background-color:rgb(218,133,8);font-size: 10px;}
+    from{background-color:var(--corpadrao);font-size: 10px;}
     to{background-color: white;color: black;font-size: 13px;} 
 
     
@@ -151,7 +144,7 @@ header ul li a:hover{
 .barba:hover{
     background-color: white;
     transition: 1.5s; 
-    border: rgb(218,133,8) ridge 7px;
+    border: var(--corpadrao) ridge 7px;
     transform: scale(1.03);
     
     
@@ -168,7 +161,7 @@ header ul li a:hover{
 .corte:hover{
     background-color: white;
     transition: 1s; 
-    border: rgb(218,133,8) ridge 7px;
+    border: var(--corpadrao) ridge 7px;
     transform: scale(1.05);
     
 }
@@ -184,7 +177,7 @@ header ul li a:hover{
 .maquina:hover{
     background-color: white; 
     transition: 1s;
-    border: rgb(218,133,8) ridge 7px;
+    border: var(--corpadrao) ridge 7px;
     transform: scale(1.05);
 }
 .sobrancelha{
@@ -199,7 +192,7 @@ header ul li a:hover{
 .sobrancelha:hover{
     background-color: white; 
     transition: 1s;
-    border: rgb(218,133,8) ridge 7px;
+    border: var(--corpadrao) ridge 7px;
     transform: scale(1.05);
 }
 .pigmentacao{
@@ -214,7 +207,7 @@ header ul li a:hover{
 .pigmentacao:hover{
     background-color: white; 
     transition: 1s;
-    border: rgb(218,133,8) ridge 7px;
+    border: var(--corpadrao) ridge 7px;
     transform: scale(1.05);
 }
 .acabamentos{
@@ -229,10 +222,18 @@ header ul li a:hover{
 .acabamentos:hover{
     background-color: white; 
     transition: 1s;
-    border: rgb(218,133,8) ridge 7px;
+    border: var(--corpadrao) ridge 7px;
     transform: scale(1.05);
 }
 h2{
-    color: rgb(218,133,8);
+    color: var(--corpadrao);
     margin-bottom: 10px;
+}
+
+@media screen and (max-width:1024px){
+    header{text-align: center;}
+    .menu{text-align: center;width: 100%;}
+    .banner > h1{width: 100%; }
+    .link_video a img{width: 80%;}
+
 }
