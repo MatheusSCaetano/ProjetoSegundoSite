@@ -85,12 +85,13 @@ header ul  a:hover{
     padding:0 10px;
 }
 .servicos{
+    max-width: 100%;
+    padding: 15px 15px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
     background-color: black;
-    height: 170%;
     margin-bottom: 25px;
     margin-top: 20px;
     border: outset 15px var(--corpadrao) ;
@@ -106,37 +107,22 @@ header ul  a:hover{
     padding: 5px;
     text-shadow: 1px 1px 1px;
     animation-name: titulo_catalogo1;
-    animation-duration: 10s;
+    animation-duration: 20s;
+    animation-direction: alternate-reverse;
     animation-iteration-count: infinite;
     transform: scale(1.5);
 }
-@keyframes titulo_catalogo1{
-    from{background-color:var(--corpadrao);font-size: 18px;}
-    to{background-color: white;color: black;font-size: 22px;}
-}
-.titulo_catalogo > p{
-    margin-top: 5px;
-    color: white;
-    padding: 5px;
-    text-shadow: 1px 1px;
-    animation-name: titulo_catalogo2;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-   transform: scale(1.5);
-}
-@keyframes titulo_catalogo2{
-    from{background-color:var(--corpadrao);font-size: 10px;}
-    to{background-color: white;color: black;font-size: 13px;} 
 
-    
+@keyframes titulo_catalogo1{
+    from{color: white;font-size: 0px;}
+    to{color: var(--corpadrao);font-size: 22px;}
 }
 .barba{
     border: white ridge 7px;
-    width: 97%;
-    padding: 10px;
+    width: 100%;
+    padding: 0 10px;
     margin-top: 20px;
     cursor:pointer;
-    margin-left: 20px;
     transition:transform 1s;
     
     
@@ -152,9 +138,7 @@ header ul  a:hover{
 .corte{
     border:ridge;
     margin-top: 15px;
-    width: 30%;
-    padding: 10px;
-    margin-left: 20px;
+    width: 33.3%;
     cursor:pointer;
     transition:transform 1s;
 }
@@ -168,9 +152,7 @@ header ul  a:hover{
 .maquina{
     border-style: ridge;
     margin-top: 15px;
-    width: 30%;
-    padding: 10px;
-    margin-left: 50px;
+    width: 33.3%;
     cursor:pointer;
     transition:transform 1s;
 }
@@ -183,11 +165,12 @@ header ul  a:hover{
 .sobrancelha{
     border-style: ridge;
     margin-top: 15px;
-    width: 30%;
-    padding: 10px;
-    margin-left: 40px;
+    width: 33.3%;   
     cursor:pointer;
     transition:transform 1s;
+}
+.sobrancelha img{
+    max-width: 100%;
 }
 .sobrancelha:hover{
     background-color: white; 
@@ -198,10 +181,9 @@ header ul  a:hover{
 .pigmentacao{
     border-style: ridge;
     margin-top: 10px;
-    width: 47%;
+    width: 50%;
     padding: 10px;
     cursor:pointer;
-    margin-left: 20px;
     transition:transform 1s;
 }
 .pigmentacao:hover{
@@ -213,10 +195,9 @@ header ul  a:hover{
 .acabamentos{
     border-style: ridge;
     margin-top: 10px;
-    width: 47%;
+    width: 50%;
    padding: 10px;
    cursor:pointer;
-   margin-left: 40px;
    transition:transform 1s;
 }
 .acabamentos:hover{
@@ -232,8 +213,16 @@ h2{
 
 @media screen and (max-width:1024px){
     header{text-align: center;}
+    
     .menu{text-align: center;width: 100%;}
-    .banner > h1{width: 100%; }
-    .link_video a img{width: 80%;}
+    .banner{border: outset 8px;border-color: rgb(218,133,8)  rgb(155, 94, 2)  rgb(155, 94, 2)  rgb(218,133,8) ;}
+    .banner > h1{max-width: 100%; }
+   .link_video a img{width: 80%;}
 
+    .servicos{margin-top: 5px; border: outset 8px var(--corpadrao);}
+   .servicos .corte{width: 100%;}
+   .servicos .maquina{width: 100%;}
+   .servicos .sobrancelha{width: 100%;}
+   .servicos .pigmentacao{width: 100%;}
+   .servicos .acabamentos{width: 100%;}
 }
