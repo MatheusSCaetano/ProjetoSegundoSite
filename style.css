@@ -92,8 +92,7 @@ header ul  a:hover{
     align-items: center;
     text-align: center;
     background-color: black;
-    margin-bottom: 25px;
-    margin-top: 20px;
+    margin-top: 10px;
     border: outset 15px var(--corpadrao) ;
     }
 .titulo_catalogo{
@@ -210,7 +209,26 @@ h2{
     color: var(--corpadrao);
     margin-bottom: 10px;
 }
-
+footer{
+    margin: 5 0;
+    max-width: 100%;
+    border: 5px var(--corpadrao) ridge;
+}
+footer .w100{
+   padding: 4px 5;
+   
+}
+.menuinf{
+    text-align: center;
+    width: 33%;
+}
+.w100  h2{
+    color: black;
+    font-size: 12px;
+}
+ .w100 .menuinf a:hover{
+background-color: red;
+}
 @media screen and (max-width:1024px){
     header{text-align: center;}
     
